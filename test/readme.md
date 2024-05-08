@@ -1,6 +1,6 @@
 ## Testing
 
-To ensure the reliability and correctness of the Dockerfile generator, we have included a comprehensive test suite. The tests cover prompts, input validation, file generation, and error handling, verifying that the generator behaves as expected in various scenarios and edge cases.
+To ensure the reliability and correctness of the Dockerfile generator, we have included a comprehensive test suite. The tests cover prompts, input validation, and error handling, verifying that the generator behaves as expected in various scenarios and edge cases.
 
 ### Installation
 
