@@ -4,7 +4,7 @@ To ensure the reliability and correctness of the Dockerfile generator, we have i
 
 ### Installation
 
-Before running the tests, ensure that you have Node.js and npm installed on your system.
+Before running the tests, ensure that you have Node.js, npm and mocha installed on your system.
 
 1. Clone the repository from GitHub:`
 
@@ -20,9 +20,9 @@ Before running the tests, ensure that you have Node.js and npm installed on your
 
 ### Running tests
 
-Once the dependencies are installed, you can run the tests using npm:
+Once the dependencies are installed, enter the tests directory and run mocha with the following command:
 
-`npm test`
+`mocha`
 
  This command will execute the entire test suite and provide feedback on the test results. Make sure all tests pass before making any contributions or modifications to the generator.
  
