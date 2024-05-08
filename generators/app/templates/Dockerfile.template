@@ -1,0 +1,64 @@
+# Base image
+FROM <%= baseImage %>
+<% if (copySource) { %>
+
+# Copy source to destination
+<% if (typeof copyDestination !== 'undefined') { %>
+COPY <%= copySource %> <%= copyDestination %><% } else { %>
+COPY <%= copySource %> .
+<% } %><% } %>
+<% if (exposePorts) { %>
+
+# Expose ports
+EXPOSE <%= exposePorts %>
+<% } %>
+<% if (environment) { %>
+
+# Environment variables
+ENV <%= environment %>
+<% } %>
+<% if (cmd) { %>
+
+# Command to run when the container starts
+CMD <%= cmd %>
+<% } %>
+<% if (arg) { %>
+
+# Variable to pass with the docker build command at the build-time
+ARG <%= arg %>
+<% } %>
+<% if (entrypoint) { %>
+
+# Main command to be executed when the container is launched
+ENTRYPOINT <%= entrypoint %>
+<% } %>
+<% if (healthcheck) { %>
+
+# Health check options
+HEALTHCHECK <%= healthcheck %> <% } %><% if (healthcheckCmd) { %> CMD <%= healthcheckCmd %><% } %>
+<% if (label) { %>
+
+# Labels for the image
+LABEL <%= label %>
+<% } %>
+
+<% if (onbuild) { %>
+
+# Instruction to be executed when the image is used as the base for another build
+ONBUILD <%= onbuild %>
+<% } %>
+<% if (stopsignal) { %>
+
+# Call signal to be sent to the container to exit
+STOPSIGNAL <%= stopsignal %>
+<% } %>
+<% if (user) { %>
+
+# Set the user and group
+USER <%= user %>
+<% } %>
+<% if (volume) { %>
+
+# Volume's mount point
+VOLUME <%= volume %>
+<% } %>
