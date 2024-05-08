@@ -4,13 +4,13 @@
     "mocha": "^10.4.0",
     "yeoman-generator": "^4"
   },
-  "name": "generator-dockerfile",
+  "name": "generator-yeoman-docker",
   "description": "The Dockerfile Generator is a Yeoman generator that helps you quickly generate Dockerfiles for your projects. ",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "main": "index.js",
   "type": "module",
   "directories": {
-    "test": "test"
+    "test": "cd /test && mocha"
   },
   "dependencies": {
     "ansi-styles": "^3.2.1",
@@ -166,18 +166,18 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DiogoAngelim/generator-dockerfile.git"
+    "url": "git+https://github.com/DiogoAngelim/generator-yeoman-docker.git"
   },
   "keywords": [
     "docker",
     "dockerfile",
-    "yeoman",
+    "yeoman-generator",
     "generator"
   ],
-  "author": "Diogo Angelim",
+  "author": "diogoangelim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DiogoAngelim/generator-dockerfile/issues"
+    "url": "https://github.com/DiogoAngelim/generator-yeoman-docker/issues"
   },
-  "homepage": "https://github.com/DiogoAngelim/generator-dockerfile#readme"
+  "homepage": "https://github.com/DiogoAngelim/generator-yeoman-docker#readme"
 }

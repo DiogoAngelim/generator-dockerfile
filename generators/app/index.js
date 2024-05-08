@@ -1,4 +1,3 @@
-// TODO: Regenerate documentation for given prompts
 import Generator from 'yeoman-generator';
 import fs from 'fs';
 import { validateDirectoryFormat, validateKeyValuePairs, validateDirectoryPath, validatePortNumbers, validateArg, validateHealthcheck, validateOnbuild, validateStopsignal, validateUser, validateVolume, validateCmd } from './validate.js';
@@ -148,5 +147,4 @@ export default class extends Generator {
       }
     })
   }
-  
 };

@@ -4,7 +4,6 @@ import { validateDirectoryFormat, validateKeyValuePairs, validateDirectoryPath, 
 
 describe('Dockerfile Generator', function () {
   
-  // Test input validation functions
   describe('Input Validation', function () {
     describe('validateDirectoryPath', function () {
       it('should return true for valid directory path', function () {
