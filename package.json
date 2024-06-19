@@ -6,7 +6,7 @@
   },
   "name": "generator-yeoman-docker",
   "description": "The Dockerfile Generator is a Yeoman generator that helps you quickly generate Dockerfiles for your projects. ",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -175,7 +175,7 @@
     "generator"
   ],
   "author": "diogoangelim",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DiogoAngelim/generator-yeoman-docker/issues"
   },
